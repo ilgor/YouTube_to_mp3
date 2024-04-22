@@ -5,7 +5,7 @@ import re
 def download_youtube_as_mp3(youtube_url):
     with yt_dlp.YoutubeDL() as ydl:
         video_info = ydl.extract_info(youtube_url, download=False)
-        video_title = video_info.get['title', 'Unknown Title']
+        video_title = video_info.get('title', 'Unknown Title')
         video_uploader = video_info.get('uploader', 'Unknown Author')
 
         safe_filename = re.sub(
