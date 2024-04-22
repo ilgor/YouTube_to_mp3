@@ -27,9 +27,9 @@ def download_youtube_as_mp3(youtube_url):
         return safe_filename
 
 
-youtube_url = "https://www.youtube.com/watch?v=aYcxqX6hgyg"
+# youtube_url = "https://www.youtube.com/watch?v=aYcxqX6hgyg"
 
-# youtube_url = input('Please enter youtube URL: ')
+youtube_url = input('Please enter youtube URL: ')
 
 file_name = download_youtube_as_mp3(youtube_url)
 print(f"File saved as: {file_name}.mp3")
